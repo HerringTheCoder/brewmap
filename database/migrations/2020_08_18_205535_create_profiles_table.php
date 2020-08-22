@@ -14,16 +14,16 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         Schema::create(
-            'profiles'
+            "profiles"
             , function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description')->nullable;
-            $table->string('avatar_path')->nullable;
-            $table->date('birthday');
-            $table->string('facebook_path')->nullable;
-            $table->string('instagram_path')->nullable;
-            $table->string('twitter_path')->nullable;
+            $table->string("name");
+            $table->string("description")->nullable;
+            $table->string("avatar_path")->nullable;
+            $table->date("birthday");
+            $table->string("facebook_path")->nullable;
+            $table->string("instagram_path")->nullable;
+            $table->string("twitter_path")->nullable;
             $table->timestamps();
         });
     }
@@ -35,6 +35,6 @@ class CreateProfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists("profiles");
     }
 }

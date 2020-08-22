@@ -17,6 +17,6 @@ class User extends LaravelUser
 
     public function profile()
     {
-        return $this->hasOne('App\Profile');
+        return $this->hasOne("App\Profile");
     }
 }
